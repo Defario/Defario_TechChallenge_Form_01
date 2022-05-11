@@ -1,0 +1,113 @@
+*{
+    font-family: 'poppins';
+    box-sizing: border-box;
+}
+
+.box{
+    background-color: white;
+    /* border: solid 1px black ; */
+    border-radius: 5px;
+    padding: 20px 20px 20px 20px;
+    width: 400px;
+}
+
+.form-title{
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+}
+
+.form-item{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-item2{
+    margin: 0px;
+}
+
+.form-item input{
+    display: block;
+    border: 2px solid black;
+    border-radius: 2px;
+    width: 100%;
+}
+
+.form-item.success input{
+    border-color: #36d67c;
+}
+
+.form-item.error input{
+    border-color: #f34848;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: 	#FFE4C4;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.form-item i{
+    visibility: hidden;
+    position: absolute;
+    top: 29px;
+    right: 12px;
+}
+
+.form-item.success i.fa-check-circle{
+    color: #36d67c;
+    visibility: visible;
+}
+
+.form-item.error i.fa-circle-xmark{
+    color: #f34848;
+    visibility: visible;
+}
+
+
+.form-item2 i{
+    visibility: hidden;
+    position: absolute;
+    top: 29px;
+    right: 12px;
+}
+
+.form-item small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 1;
+	left: 0;
+    visibility: hidden;
+}
+
+.form-item.error small {
+	visibility: visible;
+}
+
+.form-item2 small{
+    position: absolute;
+    visibility: hidden;
+    color: #f34848;
+}
+
+.form-item2.error small{
+    visibility: visible;
+}
+
+button{
+    font-size: 18px;
+    color: rgb(255, 251, 240);
+    padding: 12px;
+    width: 100%;
+    border: 0px;
+    border-radius: 3px;
+    background-color: rgb(253, 207, 151);
+    margin-top: 20px;
+}
